@@ -1,0 +1,45 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h2>Formulario:</h2>
+        <form name="formulario" method="post">
+            <table>
+                <tr>
+                    <td><label for="lunes">Lunes:</label></td>
+                    <td><input type="number" id="lunes" placeholder="Lunes"></td>
+                </tr>
+                <tr>
+                    <td><label for="martes">Martes:</label></td>
+                    <td><input type="number" id="martes" placeholder="Martes"></td>
+                </tr>
+                <tr>
+                    <td><label for="miercoles">Miercoles:</label></td>
+                    <td><input type="number" id="miercoles" placeholder="Miercoles"></td>
+                </tr>
+                <tr>
+                    <td><label for="jueves">Jueves</label></td>
+                    <td><input type="number" id="jueves" placeholder="Jueves"></td>
+                </tr>
+                <tr>
+                    <td><label for="viernes">Viernes</label></td>
+                    <td><input type="number" id="viernes" placeholder="Viernes"></td>
+                </tr>
+                <tr>
+                    <td><label for="sabado">Sabado</label></td>
+                    <td><input type="number" id="sabado" placeholder="Sabado"></td>
+                </tr>
+                <tr>
+                    <td><label for="domingo">Domingo</label></td>
+                    <td><input type="number" id="domingo" placeholder="Domingo"></td>
+                </tr>
+            </table><br/>
+            <input type="button" onclick="guardarHoras()" value="Guardar">
+            <input type="button" onclick="localStorage.clear()" value="Borrar">
+            <input type="button" onclick="fechaActual()" value="Fecha Actual">
+        </form>
+    </body>
+</html>
