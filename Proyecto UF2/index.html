@@ -1,3 +1,5 @@
+<!--Poder introducir cuando empieza el objetivo.-->
+<!--Poder introducir dias festivos donde No haremos las horas dedicadas..-->
 <html>
     <head>
       <meta charset="UTF-8">
@@ -10,36 +12,40 @@
             <table>
                 <tr>
                     <td><label for="lunes">Lunes:</label></td>
-                    <td><input type="number" min="0" max="12" id="lunes" placeholder="Lunes"></td>
+                    <td><input type="number" min="0" max="12" id="lunes" placeholder="Cuantas Horas?"></td>
                 </tr>
                 <tr>
                     <td><label for="martes">Martes:</label></td>
-                    <td><input type="number" min="0" max="12" id="martes" placeholder="Martes"></td>
+                    <td><input type="number" min="0" max="12" id="martes" placeholder="Cuantas Horas?"></td>
                 </tr>
                 <tr>
                     <td><label for="miercoles">Miercoles:</label></td>
-                    <td><input type="number" min="0" max="12" id="miercoles" placeholder="Miercoles"></td>
+                    <td><input type="number" min="0" max="12" id="miercoles" placeholder="Cuantas Horas?"></td>
                 </tr>
                 <tr>
                     <td><label for="jueves">Jueves</label></td>
-                    <td><input type="number" min="0" max="12" id="jueves" placeholder="Jueves"></td>
+                    <td><input type="number" min="0" max="12" id="jueves" placeholder="Cuantas Horas?"></td>
                 </tr>
                 <tr>
                     <td><label for="viernes">Viernes</label></td>
-                    <td><input type="number" min="0" max="12" id="viernes" placeholder="Viernes"></td>
+                    <td><input type="number" min="0" max="12" id="viernes" placeholder="Cuantas Horas?"></td>
                 </tr>
                 <tr>
                     <td><label for="sabado">Sabado</label></td>
-                    <td><input type="number" min="0" max="12" id="sabado" placeholder="Sabado"></td>
+                    <td><input type="number" min="0" max="12" id="sabado" placeholder="Cuantas Horas?"></td>
                 </tr>
                 <tr>
                     <td><label for="domingo">Domingo</label></td>
-                    <td><input type="number" min="0" max="12" id="domingo" placeholder="Domingo"></td>
+                    <td><input type="number" min="0" max="12" id="domingo" placeholder="Cuantas Horas?"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" onclick="guardarHoras()" value="Guardar"></td>
+                    <td><input type="submit" onclick="localStorage.clear()" value="Borrar"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" onclick="fechaActual()" value="Fecha Actual"></td>
                 </tr>
             </table><br/>
-            <input type="button" onclick="guardarHoras()" value="Guardar">
-            <input type="button" onclick="localStorage.clear()" value="Borrar">
-            <input type="button" onclick="fechaActual()" value="Fecha Actual">
         </form>
     </body>
 </html>
