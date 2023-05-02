@@ -20,12 +20,16 @@ function guardarHoras(){
     var sunday = document.getElementById("domingo");
     localStorage.setItem("domingo", sunday.value);
     
-
     var total_horas_semana = parseInt(monday.value) + parseInt(tuesday.value) + parseInt(wednesday.value) + parseInt(thursday.value) + parseInt(friday.value) + parseInt(saturday.value) + parseInt(sunday.value);
-    localStorage.setItem("totalHoras",total_horas_semana);
-}
+    localStorage.setItem("horas_semanales",total_horas_semana);
 
-function fechaActual() {
-  return new Date();
+    const tarea_nombre = document.getElementById("tarea").value;
+    const totalHoras = document.getElementById("totalHoras").value;
+    const semanas = totalHoras / total_horas_semana;
+    
+    const fechafinal = new Date();
+    fechafinal.setDate(fechafinal.getDate() + (semanas * 7));
+    
+    const result = `La tarea "${tarea_nombre}" terminara el ${fechafinal.toDateString()}.`;
+    console.log(result);
 }
-

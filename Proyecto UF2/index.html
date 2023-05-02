@@ -7,9 +7,21 @@
       <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
-        <h2>Formulario:</h2>
+        <h1>Calendario:</h1>
+
+        <form>
+            <tr>
+                <td><label for="tarea">Nombre de la Tarea:</label></td>
+                <td><input type="text" id="tarea"></td>
+            </tr>
+            <tr>
+                <td><label for="tarea">Horas totales a cumplir:</label></td>
+                <td><input type="number" id="totalHoras"></td>
+            </tr>
+        </form>
         <form name="formulario" method="post">
             <table>
+                <h2>Horas Semanales:</h2>
                 <tr>
                     <td><label for="lunes">Lunes:</label></td>
                     <td><input type="number" min="0" max="12" id="lunes" placeholder="Cuantas Horas?"></td>
@@ -42,10 +54,7 @@
                     <td><input type="submit" onclick="guardarHoras()" value="Guardar"></td>
                     <td><input type="submit" onclick="localStorage.clear()" value="Borrar"></td>
                 </tr>
-                <tr>
-                    <td><input type="submit" onclick="fechaActual()" value="Fecha Actual"></td>
-                </tr>
-            </table><br/>
+            </table>
         </form>
     </body>
 </html>
