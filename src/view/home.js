@@ -1,8 +1,7 @@
 import React from "react";
 
 function Home() {
-    const now = new Date();
-    const day = now.toLocaleDateString();
+    const day = new Date().toLocaleDateString();
 
     return (
         <div>
