@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/app.css";
 
 function Home() {
     const day = new Date().toLocaleDateString();
